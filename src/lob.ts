@@ -95,14 +95,5 @@ export class LobHandler implements IBackboneHandler, ILatency {
     let latencyRecord: LatencyRecord = new LatencyRecord(this.startTime, latency, 'LobHandler');
     backboneContext.latencyRecords.push(latencyRecord);
   }
-
-  // private getHttpsAgent(): Agent {
-
-    
-
-
-  // }
-
-
 }
 
