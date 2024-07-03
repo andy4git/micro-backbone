@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: backbone
   annotations:
+    service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: ip
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internal"
+    service.beta.kubernetes.io/aws-load-balancer-type: external
 #    service.beta.kubernetes.io/aws-load-balancer-internal: "true"
-    service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: "ip",
-    service.beta.kubernetes.io/aws-load-balancer-scheme: "internal",
-    service.beta.kubernetes.io/aws-load-balancer-type: "external"
-
 spec:
   selector:
     app: backbone  
