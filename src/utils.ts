@@ -198,7 +198,7 @@ async function getAWSSecret(): Promise<string> {
   const client = new SecretsManagerClient({ region: process.env.APP_REGION });
 
   const input = {
-    SecretId: process.env.JWKS_SECRET_NAME,
+    SecretId: process.env.JWKS_K_NAME,
     VersionStage: "AWSCURRENT", 
   };  
   const command = new GetSecretValueCommand( input );
